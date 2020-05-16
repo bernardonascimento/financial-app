@@ -10,12 +10,12 @@ const IntroFooter = ({ navigation }) => {
   const navigateToNextScreen = () => 
     indexOfCurrentScreen !== 2 
     ? navigation.navigate(nameOfScreen(indexOfCurrentScreen + 1))
-    : navigation.navigate('Home');
+    : navigation.navigate('Login');
   const trackerColor = indexOfComp => indexOfCurrentScreen ===   indexOfComp;
 
   return (
     <Container>
-      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Login')}>
         <Icon iconName="home" />
       </TouchableOpacity>
 

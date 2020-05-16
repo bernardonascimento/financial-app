@@ -23,6 +23,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": " Financial app for statup using react native and expo",
+    "githubUrl": "https://github.com/bernardonascimento/financial-app"
   }
 }
