@@ -29,7 +29,7 @@ export default ({ navigation }) => {
       <Animatable.View 
         style={styles.footer}
         animation="fadeInUpBig"
-        duration={2000}>
+        duration={1500}>
         <Text style={styles.title}>Crie sua conta</Text>
         <Text style={styles.text}>Crie sua conta para iniciar o seu controle financeiro!</Text>
         <Text style={styles.text}>O financial app te ajudara a ter o controle total sobre suas financas</Text>
