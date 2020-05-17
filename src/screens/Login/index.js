@@ -6,14 +6,17 @@ import {
   StyleSheet,
   Dimensions,
   TouchableOpacity,
+  Image
 } from "react-native";
 import * as Animatable from "react-native-animatable";
 import { LinearGradient } from "expo-linear-gradient";
+import { FontAwesome } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="light-content" />      
       <View style={styles.header}>
         <Animatable.Image
           animation="bounceIn"
@@ -27,18 +30,55 @@ export default ({ navigation }) => {
         style={styles.footer}
         animation="fadeInUpBig"
         duration={2000}>
-        <Text style={styles.title}>Stay connect with everyone!</Text>
-        <Text style={styles.text}>Sign in with account</Text>
+        <Text style={styles.title}>Crie sua conta</Text>
+        <Text style={styles.text}>Crie sua conta para iniciar o seu controle financeiro!</Text>
+        <Text style={styles.text}>O financial app te ajudara a ter o controle total sobre suas financas</Text>
 
         <View style={styles.button}>
           <TouchableOpacity
             style={{ flex: 1 }}
             onPress={() => navigation.navigate("SignIn")}>          
             <LinearGradient 
-              colors={["#5db8fe", "#39cff2"]}
+              colors={["#4c669f", "#3b5998", "#192f6a"]}
               style={styles.linearGradient}>
+                <FontAwesome name="facebook" size={24} color="#fff" />
                 <Text style={styles.buttonText}>
-                  Sign in with E-mail
+                  Cadastrar com Facebook
+                </Text>
+            </LinearGradient>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.button}>
+          <TouchableOpacity
+            style={{ flex: 1 }}
+            onPress={() => navigation.navigate("SignIn")}>          
+            <LinearGradient 
+              colors={["#c0c0c0", "#dcdcdc"]}
+              style={styles.linearGradient}>
+                <Image
+                  source={require('../../../assets/google.png')}
+                  fadeDuration={0}
+                  style={{width: 24, height: 24}}
+                />
+                <Text style={styles.buttonText}>
+                  Cadastrar com Google
+                </Text>
+            </LinearGradient>
+          </TouchableOpacity>
+        </View>
+
+        <View style={styles.button}>
+          <TouchableOpacity
+            style={{ flex: 1 }}
+            onPress={() => navigation.navigate("SignIn")}>          
+            <LinearGradient 
+              // colors={["#5db8fe", "#39cff2"]}
+              colors={["#0086FF", "#5db8fe"]}
+              style={styles.linearGradient}>
+                <MaterialCommunityIcons name="email-outline" size={24} color="#fff" />
+                <Text style={styles.buttonText}>
+                  Cadastrar com E-mail
                 </Text>
             </LinearGradient>
           </TouchableOpacity>
@@ -62,7 +102,7 @@ var styles = StyleSheet.create({
     alignItems: "center",
   },
   footer: {
-    flex: 1.5,
+    flex: 2,
     backgroundColor: "#fff",
     borderTopLeftRadius: 30,
     borderTopRightRadius: 30,
@@ -76,26 +116,29 @@ var styles = StyleSheet.create({
   title: {
     color: "#0086FF",
     fontWeight: "bold",
-    fontSize: 30,
+    fontSize: 25,
   },
   text: {
     color: "gray",
     marginTop: 5,
   },
   button: {
-    marginTop: 30,
+    marginTop: 25,
     height: 50,
   },
   linearGradient: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-evenly",
     flexDirection: "row",
-    borderRadius: 25,    
+    borderRadius: 25,
+    paddingLeft: 40,
+    paddingRight: 40,    
   },
   buttonText: {
     fontSize: 18,
     fontWeight: "bold",
     color: '#ffffff',
+    paddingLeft: 10,
   },
 })

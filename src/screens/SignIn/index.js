@@ -12,7 +12,7 @@ export default () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.text_header}>Welcome!</Text>
+        <Text style={styles.text_header}>Bem-vindo!</Text>
       </View>
       <View style={styles.footer}>
         <Text style={styles.text_footer}>E-Mail</Text>
