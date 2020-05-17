@@ -1,13 +1,13 @@
 import React from 'react';
 import { Intro } from '../../components';
 
-const animation = require('../../animations/graphics.json');
+const animation = require('../../animations/hands.json');
 
 const IntroOne = () => (
   <Intro
     sourceOfAnimation={animation}
-    title="Title One"
-    body="Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt   ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    title="Controle patrimonial"
+    body="Fazer um controle de patrimônio de forma correta e realizar uma gestão patrimonial periodicamente, possibilita à voce: realizar uma gestão financeira eficiente e construir uma previsão de custos mais assertiva, reduzir gastos, otimizar processos de compras e mais"
   />
 );
 
