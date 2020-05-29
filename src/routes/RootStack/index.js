@@ -1,6 +1,6 @@
 import { createStackNavigator } from 'react-navigation-stack';
 import AppIntroTab from '../AppIntro';
-import { Login, SignIn, SignUp, Home } from '../../screens';
+import { Login, SignIn, SignUp, Home, ChatBot } from '../../screens';
 import { options } from './options';
 
 const RootStack = createStackNavigator(
@@ -10,6 +10,7 @@ const RootStack = createStackNavigator(
     SignIn,
     SignUp,
     Home,
+    ChatBot,
   }, 
   { 
     headerMode: 'none' 

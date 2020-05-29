@@ -71,7 +71,7 @@ export default ({ navigation }) => {
         <View style={styles.button}>
           <TouchableOpacity
             style={{ flex: 1 }}
-            onPress={() => navigation.navigate("SignIn")}>          
+            onPress={() => navigation.navigate("ChatBot")}>          
             <LinearGradient 
               // colors={["#5db8fe", "#39cff2"]}
               colors={["#0086FF", "#5db8fe"]}
