@@ -32,7 +32,7 @@ const Review = (props) => {
 const steps = [
   {
     id: "1",
-    message: "What is your name?",
+    message: "Olá eu me chamo Jexi, sua nova assistente financeira. Qual seu nome?",
     trigger: "name",
   },
   {
@@ -42,8 +42,8 @@ const steps = [
   },
   {
     id: "3",
-    message: "Hi {previousValue}! What is your gender?",
-    trigger: "gender",
+    message: "{previousValue}, vai ser um prazer te auxiliar nessa nova jornada...",
+    end: true
   },
   {
     id: "gender",
