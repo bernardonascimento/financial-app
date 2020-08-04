@@ -12,12 +12,12 @@ import {
 const Intro = ({ sourceOfAnimation, title, body }) => (
   <Container>
     <AnimationView>
-      <LottieView
+      {/* <LottieView
         source={sourceOfAnimation}
         autoPlay
         style={{ width: 180, height: 180 }}
         resizeMode="cover"
-      />
+      /> */}
     </AnimationView>
     <DescriptionView>
       <IntroTitle>{title}</IntroTitle>
